@@ -7,10 +7,5 @@
 
 .container {
     display: grid;
-    grid-column-gap: 50vw;
-    grid-row-gap: 10vh;
-}
-
-#id_page_heading {
-    font-size: 4vw;
+    grid-row-gap: 5vh;
 }

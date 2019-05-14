@@ -10,19 +10,22 @@
 
         <link rel="stylesheet" href="/stylesheets/button.css">
         <link rel="stylesheet" href="/stylesheets/textbox.css">
+        <link rel="stylesheet" href="/stylesheets/text.css">
         <link rel="stylesheet" href="/stylesheets/authentication-layout.css">
     </head>
 
     <body>
         <div id="id_form">
             <form class="container" method="POST">
-                <span id="id_page_heading"> Register </span>
+                <span class="text text-heading1" id="id_page_heading"> Register </span>
 
-                <label for="id_username"> Username:
+                <label for="id_username"> 
+                    <span class="text text-heading2"> Username: </span>
                     <input class="textbox" id="id_username" placeholder="Username" name="username" type="text"/>
                 </label>
 
-                <label for="id_password"> Password:
+                <label for="id_password"> 
+                    <span class="text text-heading2"> Password: </span>
                     <input class="textbox" id="id_password" placeholder="Password" name="password" type="password"/>
                 </label>
 
