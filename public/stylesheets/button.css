@@ -5,6 +5,7 @@
     color: white;
     text-align: center;
     cursor: pointer; 
+    box-sizing: border-box;
 }
 
 .btn-red {
