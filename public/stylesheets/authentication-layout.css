@@ -15,7 +15,7 @@ html {
 .container {
     display: grid;
     height: var(--container-height);
-    grid-template-rows: auto;
+    grid-template-rows: 2fr 0.5fr 0.5fr 2fr;
 }
 
 #id_page_heading {
