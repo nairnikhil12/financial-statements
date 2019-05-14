@@ -15,6 +15,7 @@ body {
 
     #id_form {
         margin-left: calc(50vw - var(--container-width) / 2);
+        margin-top: calc(50vh - var(--container-height) / 2)
     }
 }
 
