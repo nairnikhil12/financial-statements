@@ -1,11 +1,24 @@
+html {
+    --container-width: 30vw;
+    --container-height: calc(var(--container-width) * 1.25);
+}
+
 #id_form {
-    margin-left: 25vw;
-    width: 50vw;
-    height: 40vw;
-    border: 1px solid lightblue;
+    margin-left: calc(50vw - var(--container-width) / 2);
+    width: var(--container-width);
+    height: var(--container-height);
+    border: 1.5px solid lightblue;
+    border-radius: 4px;
 }
 
 .container {
     display: grid;
-    grid-row-gap: 5vh;
+    height: var(--container-height);
+    grid-template-rows: auto;
+}
+
+#id_submit {
+    width: calc(var(--container-width) / 8);
+    height: calc(var(--container-width) / 16);
+    margin: auto;
 }
