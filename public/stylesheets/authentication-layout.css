@@ -10,7 +10,7 @@ body {
 @media (min-width: 768px) {
     html {
         --container-width: 30vw;
-        --container-height: calc(var(--container-width) * 1.25);
+        --container-height: calc(var(--container-width) * 1.125);
     }
 
     #id_form {
@@ -47,8 +47,8 @@ body {
 }
 
 #id_submit {
-    width: calc(var(--container-width) / 5);
-    height: calc(var(--container-width) / 14);
+    width: calc(var(--container-width) / 2);
+    height: calc(var(--container-width) / 8);
     margin: auto;
 }
 
