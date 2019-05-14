@@ -1,5 +1,7 @@
 .btn {
     border: none;
+    border-radius: 8px;
+    padding: 0.5% 1% 0.5% 1%;
     color: white;
     text-align: center;
     cursor: pointer; 
