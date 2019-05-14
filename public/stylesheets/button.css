@@ -1,0 +1,18 @@
+.btn {
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer; 
+}
+
+.btn-red {
+    background-color: #f44336;
+}
+
+.btn-blue {
+    background-color: #008cba;
+}
+
+.btn-green {
+    background-color: #4caf50;
+}
