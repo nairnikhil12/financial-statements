@@ -9,6 +9,7 @@ html {
     height: var(--container-height);
     border: 1.5px solid lightblue;
     border-radius: 4px;
+    background-color: #E0E8E8;
 }
 
 .container {
@@ -17,8 +18,19 @@ html {
     grid-template-rows: auto;
 }
 
+#id_page_heading {
+    grid-template-columns: auto;
+    margin: auto;
+}
+
+#id_username, #id_password {
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+}
+
 #id_submit {
-    width: calc(var(--container-width) / 8);
-    height: calc(var(--container-width) / 16);
+    width: calc(var(--container-width) / 5);
+    height: calc(var(--container-width) / 14);
     margin: auto;
 }

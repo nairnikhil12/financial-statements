@@ -1,4 +1,8 @@
 .textbox {
-    border: none;
-    border-bottom: 1px solid lightblue;
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+.textbox:focus {
+    outline: none;
 }
