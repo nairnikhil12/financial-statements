@@ -9,6 +9,9 @@ var indexRouter = require('./routes/index');
 var registerRouter = require('./routes/register');
 var loginRouter = require('./routes/login');
 
+// loading the database
+var db = require('./models/db_start.js');
+
 var app = express();
 
 // view engine setup
