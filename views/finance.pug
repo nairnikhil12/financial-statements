@@ -19,8 +19,14 @@ html
             span(id="id_balance_sheet_tab")= "Balance Sheet"
             span(id="id_income_tab")= "Income Statement"
             span(id="id_cash_flow_tab")= "Cash Flow"
-            h1 #{symbol}
 
+        div(id="id_income_statement")
+            if income_statement!==undefined
+                ul
+                    each key in Object.entries(income_statement)
+                        li
+                            span(class="income_key")= key[0] 
+                            span(class="income_value")= key[1]
         
 
             
