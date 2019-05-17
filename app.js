@@ -8,6 +8,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var registerRouter = require('./routes/register');
 var loginRouter = require('./routes/login');
+var financeRouter = require('./routes/finance');
 
 // loading the database
 var db = require('./models/db_start.js');
@@ -26,8 +27,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // using the routers
 app.use('/', indexRouter);
-app.use('/', registerRouter);
-app.use('/', loginRouter);
+app.use('/register', registerRouter);
+app.use('/login', loginRouter);
+app.use('/finance', financeRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
