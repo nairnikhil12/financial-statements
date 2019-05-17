@@ -1,8 +1,10 @@
 .textbox {
     border-style: ridge;
     border-radius: 10px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
 }
 
 .textbox:focus {
     outline: none;
+    border-color: #428bca;
 }
