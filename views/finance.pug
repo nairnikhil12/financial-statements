@@ -8,22 +8,20 @@ html
     
     body
         div(id="id_form_area")
-            form(id="id_form")
+            form(id="id_form" action="/finance" method="get")
                 label(for="id_symbol")
                     span(id="id_search_text")= "Search: "
                     input(id="id_symbol" class="textbox" name="symbol" placeholder="SYMBOL" type="textbox")
+
+                input(type="submit")
         
         div(id="id_financial_statements_tabs")
-            span(id="id_balance_sheet_tab")="Balance Sheet"
-            span(id="id_income_tab")="Income Statement"
-            span(id="id_cash_flow_tab")="Cash Flow"
+            span(id="id_balance_sheet_tab")= "Balance Sheet"
+            span(id="id_income_tab")= "Income Statement"
+            span(id="id_cash_flow_tab")= "Cash Flow"
+            h1 #{symbol}
 
-        div(id="id_balance_sheet_area")
-            
-            
-        div(id="id_income_area")
-
-        div(id="id_cash_flow_area")
+        
 
             
 
