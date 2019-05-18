@@ -34,14 +34,14 @@ router.get('/', function(req, res){
             
         var promise_cashflow = new Promise(function(resolve, reject){
             request.get(url_cashflow, function(error, response, body){
-                resolve();
                 cash_flow = JSON.parse(body).financials.pop();
+                resolve();
             });
         });
 
         Promise.all([promise_income, promise_balance, promise_cashflow]).then(function(){
             console.log(balance_data);
-            res.render('finance', {income_statement: income_data, balance_statement: balance_data, cashflow_statement: cash_flow});
+            res.render('finance', {symbol: req.query.symbol, income_statement: income_data, balance_statement: balance_data, cashflow_statement: cash_flow});
         });
     }
 });

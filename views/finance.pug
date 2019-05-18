@@ -22,29 +22,37 @@ html
             span(id="id_income_tab" class="tab")= "Income Statement"
             span(id="id_cashflow_tab" class="tab")= "Cash Flow"
 
+        h1(id="id_symbol_name")= symbol
+
         div(id="id_income_statement")
             if income_statement!==undefined
-                ul
+                table(class="finance_table")
                     each key in Object.entries(income_statement)
-                        li
-                            span(class="income_key")= key[0] 
-                            span(class="income_value")= key[1]
+                        tr
+                            td
+                                span(class="income_key")= key[0] 
+                            td
+                                span(class="income_value")= key[1]
         
         div(id="id_balance_statement")
             if balance_statement!==undefined
-                ul
+                table(class="finance_table")
                     each key in Object.entries(balance_statement)
-                        li
-                            span(class="balance_key")= key[0] 
-                            span(class="balance_value")= key[1]
+                        tr
+                            td
+                                span(class="balance_key")= key[0] 
+                            td
+                                span(class="balance_value")= key[1]
 
         div(id="id_cashflow_statement")
             if cashflow_statement!==undefined
-                ul
+                table(class="finance_table")
                     each key in Object.entries(cashflow_statement)
-                        li
-                            span(class="balance_key")= key[0] 
-                            span(class="balance_value")= key[1]
+                        tr
+                            td
+                                span(class="balance_key")= key[0] 
+                            td
+                                span(class="balance_value")= key[1]
                         
         
 

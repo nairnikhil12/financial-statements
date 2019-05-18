@@ -28,19 +28,27 @@ body {
     font-family: sans-serif;
 }
 
-#id_income_statement {
-    position: absolute;
+#id_symbol_name {
+    color: #6b5b95;
+    margin: auto;
+    text-transform: capitalize;
+    width: 1vw;
+}
+
+#id_income_statement, #id_balance_statement, #id_cashflow_statement {
     display: none;
 }
+
+.finance_table, tr, td {
+    border: 1px solid #4cf789;
+    margin: auto;
+    color: #65749b;
+    text-transform: capitalize;
+    font-size: 1.5vw;
+} 
 
 #id_balance_statement {
-    position: absolute;
-    display: none;
-}
-
-#id_cashflow_statement {
-    position: absolute;
-    display: none;
+    display: block;
 }
 
 

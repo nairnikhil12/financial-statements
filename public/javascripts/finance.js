@@ -8,7 +8,6 @@ window.onload = function(){
     var cf_statement = document.getElementById("id_cashflow_statement");
 
     income_btn.onclick = function(){
-        console.log("AAAAAAA");
         inc_statement.style.display = "block";
         bal_statement.style.display = "none";
         cf_statement.style.display = "none";
