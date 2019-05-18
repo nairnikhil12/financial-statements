@@ -2,6 +2,32 @@ body {
     margin: none;
 }
 
+#id_symbol_search {
+    width: 20vw;
+    height: 3vh;
+}
+
+#id_search_btn {
+    margin-left: 5px;
+}
+
+#id_form {
+    display: flex;
+    justify-content: center;
+}
+
+#id_financial_statements_tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1vh;
+}
+
+.tab {
+    font-size: 2vw;
+    color: #428bca;
+    font-family: sans-serif;
+}
+
 #id_income_statement {
     position: absolute;
     display: none;
