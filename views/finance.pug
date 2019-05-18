@@ -28,6 +28,23 @@ html
                             span(class="income_key")= key[0] 
                             span(class="income_value")= key[1]
         
+        div(id="id_balance_statement")
+            if balance_statement!==undefined
+                ul
+                    each key in Object.entries(balance_statement)
+                        li
+                            span(class="balance_key")= key[0] 
+                            span(class="balance_value")= key[1]
+
+        div(id="id_cashflow_statement")
+            if cashflow_statement!==undefined
+                ul
+                    each key in Object.entries(cashflow_statement)
+                        li
+                            span(class="balance_key")= key[0] 
+                            span(class="balance_value")= key[1]
+                        
+        
 
             
 
