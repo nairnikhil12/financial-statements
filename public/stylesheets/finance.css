@@ -2,4 +2,19 @@ body {
     margin: none;
 }
 
+#id_income_statement {
+    position: absolute;
+    display: none;
+}
+
+#id_balance_statement {
+    position: absolute;
+    display: none;
+}
+
+#id_cashflow_statement {
+    position: absolute;
+    display: none;
+}
+
 
